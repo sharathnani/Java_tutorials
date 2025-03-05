@@ -1,0 +1,13 @@
+class Demo1
+{
+  public static void display()
+  {
+    System.out.println("This is a ststic method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("main Method starts");
+    display();
+    System.out.println("main method ends");
+  }
+}
