@@ -1,0 +1,43 @@
+class Multiple_classes4
+{
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    Demo.move();
+    Demo d=new Demo();
+    d.call();
+    Example e= new Example();
+    e.emp();
+    System.out.println("main ends");
+  }
+}
+class Sample{
+  public static void display()
+  {
+    System.out.println("static method of sample class");
+  }
+  public void show()
+  {
+    System.out.println("non-static method of sample class");
+  }
+}
+class Demo{
+  public static void move()
+  {
+    System.out.println("static method of Demo class");
+    Sample.display();
+    
+  }
+  public void call()
+  {
+    System.out.println("non-static method of demo class");
+    Sample s=new Sample();
+    s.show();
+  }
+}
+class Example{
+  public void emp()
+  {
+    System.out.println("nonstatic method of example class");
+  }
+}
