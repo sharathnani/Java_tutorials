@@ -1,0 +1,18 @@
+class Demo2{
+  public static void display()
+  {
+    System.out.println("first stsic method");
+    
+  }
+  public static void show()
+  {
+    System.out.println("second static method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    display();
+    show();
+    System.out.println("main ends");
+  }
+}
