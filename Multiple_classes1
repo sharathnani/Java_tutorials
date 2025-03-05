@@ -1,0 +1,23 @@
+class Multiple_classes1
+{
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    Bag b=new Bag(); //to call non static method we have to create the object
+    b.laptop();
+    Bag.book();  //to call another class static method we use classname
+    System.out.println("main ends");
+
+  }
+}
+class Bag
+{
+  public static void book()
+  {
+    System.out.println("carry the books");
+  }
+  public void laptop()
+  {
+    System.out.println("carry the laptop");
+  }
+}
