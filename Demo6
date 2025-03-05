@@ -1,0 +1,17 @@
+class Demo6{
+  public static void main1()
+  {
+    System.out.println("static method");
+  }
+  public void main2()
+  {
+    System.out.println("non static method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("main method starts");
+    Demo6 d1 =new Demo6();
+    Demo6 d2=new Demo6();
+    System.out.println("main method ends");
+  }
+}
