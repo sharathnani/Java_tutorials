@@ -1,0 +1,38 @@
+class Level1_level23
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method starts");
+    Display.sample(); //call another class static method by using class name
+    Demo.move();       //call another class static method by using class name
+    Demo d=new Demo();//call another class non static method by using new keyword
+    d.call();
+    System.out.println("Main method ends");
+    
+  }
+}
+class Display
+{
+  public static void sample()
+  {
+    System.out.println("Display class static method");
+    Demo.show();           //call another class static method by using class name
+    Demo d=new Demo();    //call another class non static method by using new keyword
+    d.call();
+  }
+}
+class Demo
+{
+  public static void show()
+  {
+    System.out.println("Demo class first static method");
+  }
+  public static void move()
+  {
+    System.out.println("Demo class second static method");
+  }
+  public void call()
+  {
+    System.out.println("Demo class non static method");
+  }
+}
