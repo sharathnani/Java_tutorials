@@ -1,0 +1,21 @@
+class Method_access_method2
+{
+  public void display()
+  {
+    System.out.println("fisrt non-static method");
+    show(); //call second non static method
+  }
+  public void show()
+  {
+    System.out.println("second non-static method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("main method starts");
+    //To call the non static method from main method we have create the object
+     Method_access_method2 m= new  Method_access_method2();
+     //call first non static method
+     m.display();
+     System.out.println("main method ends");
+  }
+}
