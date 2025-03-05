@@ -1,0 +1,18 @@
+class Demo4
+{
+  public void main1(){
+    System.out.println("first non static method");
+  }
+  public void main2()
+  {
+    System.out.println("second non static method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("mian starts");
+    Demo4 d=new Demo4();
+    d.main1();
+    d.main2();
+    System.out.println("main ends");
+  }
+}
