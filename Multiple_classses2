@@ -1,0 +1,26 @@
+class Multiple_classses2
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method starts");
+    Sample.display();  //call another class static method by using class name
+    Demo d=new Demo(); //call another class on-static ethod by using new keyword
+    d.show();
+    System.out.println("Main method starts");
+
+  }
+}
+class Demo
+{
+  public void show()
+  {
+    System.out.println("this is a non static method");
+  }
+}
+class Sample
+{
+  public static void display()
+  {
+    System.out.println("This is a static method");
+  }
+}
