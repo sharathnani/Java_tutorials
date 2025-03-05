@@ -1,0 +1,17 @@
+class Method_access_method1
+{
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    display();
+  }
+  public static void display()
+  {
+    System.out.println("first static method");
+    show();
+  }
+  public static void show()
+  {
+    System.out.println("second static method");
+  }
+}
