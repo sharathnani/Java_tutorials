@@ -1,0 +1,30 @@
+class Level1_level21{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method starts");
+    Demo d=new Demo(); //here we create the object for calling nonstatic method from main method
+    d.move();
+    System.out.println("main method ends");
+    
+  }
+}
+class Sample
+{
+  public void display(){
+    System.out.println("Sample class first non-static method");
+  }
+  public void show(){
+    System.out.println("sample class second non-static method");
+   display();   //here we call the nonstatic in another nonstatic method directly becuase both methods are in the same class
+  }
+}
+class Demo
+{
+  public void move()
+  {
+    System.out.println("Demo class non-static method");
+    Sample s=new Sample();
+    s.show(); //To call another class nonstatic method we have to create the object by using new keyword
+    
+  }
+}
