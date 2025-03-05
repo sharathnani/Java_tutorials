@@ -1,0 +1,25 @@
+class Multiple_classes3
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method stats");
+    Demo d= new Demo(); //call demo class non static method by using new keyword
+    d.show();
+    System.out.println("main method ends");
+  }
+}
+class Sample
+{
+  public static void display()
+  {
+    System.out.println("This is a static method");
+  }
+}
+class Demo
+{
+  public void show()
+  {
+    System.out.println("This is a non-static method");
+    Sample.display(); //call sample class static method by using class name
+  }
+}
