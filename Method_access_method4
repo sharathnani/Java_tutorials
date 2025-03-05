@@ -1,0 +1,20 @@
+class Method_access_method4
+{
+  public static void main(String[] args){
+    System.out.println("Main method starts");
+    //To call nonstatic method from static method we have to create the object by using new keyword
+    Method_access_method4 m =new Method_access_method4();
+    m.display();
+    System.out.println("main method ends");
+  }
+  public void display()
+  {
+    System.out.println("this is a non static method");
+    //call static method
+    show();
+  }
+  public static void show()
+  {
+    System.out.println("this a static method");
+  }
+}
