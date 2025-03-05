@@ -1,0 +1,25 @@
+class Mam_example3{
+  public static void display(){
+    System.out.println("First static method");
+    show();    //call second static method
+  }
+  public static void show(){
+    System.out.println("second static method");
+  }
+  public void move(){
+    System.out.println("first non-static method");
+    display();    //call first static method
+  }
+  public void call()
+  {
+    System.out.println("second non-static method");
+    move();    //call first non-static method
+  }
+  public static void main(String[] args){
+    System.out.println("main starts");
+    Mam_example3 m=new Mam_example3();
+    m.call();    //call second non-static method
+    System.out.println("main ends");
+
+  }
+}
