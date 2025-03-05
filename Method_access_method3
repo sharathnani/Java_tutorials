@@ -1,0 +1,21 @@
+class Method_access_method3
+{
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    //call the static method directly because of static methods are single copy nature
+    display();
+    System.out.println("main ends");
+  }
+  public static void display()
+  {
+    System.out.println("This is a static method");
+    //to call the non-static method from main method we have to create the object
+    Method_access_method3 m= new Method_access_method3();
+    m.show();
+  }
+  public void show()
+  {
+    System.out.println("This is a non-static method");
+  }
+}
