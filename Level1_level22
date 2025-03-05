@@ -1,0 +1,30 @@
+class Level1_level22{
+  public static void main(String[] args){
+    System.out.println("main method starts");
+    {
+      Demo.call(); //call another class static method by using class name
+      System.out.println("main method ends");
+    }
+  }
+}
+class Sample{
+  public static void display(){
+    System.out.println("sample class first static method");
+    show();   //call the static method directly because both are in the same class
+  }
+  public static void show(){
+    System.out.println("sample class second static method");
+  }
+  public void move(){
+    System.out.println("Sample class non-static method");
+    display(); //here call the static method directly because both are in the same class and static methods are single copy nature
+  }
+}
+class Demo{
+  public static void call()
+  {
+    System.out.println("Demo class Static method");
+    Sample s=new Sample();
+    s.move(); //here call the another class nonstatic method by using new keyword
+  }
+}
