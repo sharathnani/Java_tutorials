@@ -1,0 +1,19 @@
+class Demo5{
+  public static void main1()
+  {
+    System.out.println("static method");
+  }
+  public void main2()
+  {
+    System.out.println("nonstatic method");
+  }
+  public static void main(String[] args)
+  {
+    System.out.println("main starts");
+    main1();
+    Demo5 d=new Demo5();
+    d.main2();
+    System.out.println("main ends");
+    
+  }
+}
