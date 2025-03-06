@@ -1,0 +1,43 @@
+/*Method Overloading:- creating multiple methods with same name but different type of arguments is called 
+Method_Overloading
+Method overloading depends on two factors 
+method name must be same
+list of arguments differ from method to method*/
+
+
+class Method_Overloading1
+{
+  public static void main(String[] args)
+  {
+   System.out.println("Main method starts");
+    // call methods with class name
+
+     Demo.add(5,4);
+     Demo.add(7.5);
+     Demo d=new Demo(); //call nonstatic method by using new keyword
+     d.add(true); 
+   Demo.add(5.3,5.2,9.3);
+  System.out.println("Main method ends");
+
+  }
+}
+class Demo
+{
+  public static void add(int a, int b)
+  {
+    System.out.println("Add method with integer arguments");
+  }
+  public static void add(double a)
+  {
+    System.out.println("Add method with double arguments");
+  }
+  public void add(boolean a)
+  {
+    System.out.println("Add method with boolean arguments");
+  }
+  public static void add(double a,double b,double c)
+  {
+    System.out.println("Add method with double arguments");
+  }
+  
+}
