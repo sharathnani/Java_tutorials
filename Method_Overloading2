@@ -1,0 +1,36 @@
+class Method_Overloading2
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method starts");
+    Demo.add(2,3);
+    Demo.add(2.3,4.5);
+    Demo.add(3,8.2);
+    Demo.add(3.4,5,6);
+    System.out.println("main method ends");
+    
+  }
+}
+class Demo
+{
+  public static void add(int x, int y)
+  {
+    int res=x+y;
+    System.out.println("Addition of two integers"+res);
+  }
+  public static void add(double a,double b)
+  {
+    double res1=a+b;
+    System.out.println("Addition of two doubles"+res1);
+  }
+  public static void add(int i,double j)
+  {
+    double res2=i+j;
+    System.out.println("Addition of integer and double"+res2);
+  }
+  public static void add(double s, int c, int d)
+  {
+    double res3=s+c+d;
+    System.out.println("Addition of double,integer and integer"+res3);
+  }
+}
