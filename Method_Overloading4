@@ -1,0 +1,13 @@
+//overload the main method with static method
+class Method_Overloading4
+{
+  public static void main(String[] args)
+  {
+    main(5,3);
+  }
+  public static void main(int a, int b)
+  {
+    System.out.println(a*b);
+  }
+  
+}
