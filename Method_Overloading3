@@ -1,0 +1,24 @@
+class Method_Overloading3
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Main method starts");
+    Demo.sub(20,22);
+    Demo d= new Demo();
+    d.sub(2.3,56.7);
+    System.out.println("Maim method starts");
+  }
+}
+class Demo
+{
+  public static void sub(int x,int y)
+  {
+    int res=x+y;
+    System.out.println("substartion of two integers "+res);
+  }
+  public  void sub(double i, double j)
+  {
+    double res1=i+j;
+    System.out.println("Substraction of two doubles "+res1);
+  }
+}
