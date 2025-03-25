@@ -1,0 +1,22 @@
+class Mainclass{
+  public static void main(String[] args)
+  {
+    Dog a=new Dog();
+    a.eat();
+    a.bark();
+    
+  }
+}
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal            // Dog inherits from Animal it have all the properties of Animal class
+{  
+    void bark() 
+{
+    System.out.println("Barking...");
+    }
+}
